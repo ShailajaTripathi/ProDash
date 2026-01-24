@@ -64,11 +64,4 @@ npm run dev
 
 ---
 
-## 💡 What I Learned
-
-* How to handle **Asynchronous API lifecycles** using `useEffect`.
-* The difference between **Context API** (for global static data like Auth) and **Redux Toolkit** (for transactional data like a Cart).
-* Optimizing UI performance by preventing unnecessary re-renders during search.
-
----
 
