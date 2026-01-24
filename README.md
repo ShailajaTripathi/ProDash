@@ -1,18 +1,81 @@
-# React + Vite
+---
+# 🚀 ProDash | Modern E-Commerce Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ProDash is a high-performance product listing and management application built with React.js. It features a seamless user experience with real-time searching, advanced filtering, and a robust global cart management system.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React.js (Hooks, Context API)
+* **State Management:** Redux Toolkit (RTK)
+* **Styling:** Tailwind CSS (Mobile-first, Responsive)
+* **Routing:** React Router DOM
+* **API:** FakeStore API (RESTful)
+* **Storage:** LocalStorage for persistent sessions
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
 
-# ProDash
+### 🏗️ Global State Management (Redux Toolkit)
+* Centralized **Cart Slice** to manage items, quantities, and real-time total price calculations.
+* Decoupled business logic from UI components for better scalability.
+
+### 🛡️ Authentication & Persistence
+* Utilized **React Context API** for global User Authentication (Login/Signup).
+* Integrated **LocalStorage** to persist user sessions and cart data across page refreshes.
+
+### 🔍 Optimized "Master Data" Search
+* Implemented a high-performance filtering pattern. By maintaining a **Master Copy** of the product list, users can search categories and filter by "Top Rated" (⭐) instantly without redundant API calls.
+
+### 📝 Dynamic Form Validation
+* Developed Support and Contact modules using **State-driven validation**.
+* Used **Conditional Rendering** to provide real-time UI feedback and error messaging to guide user input.
+
+---
+
+## 📸 Component Architecture
+
+1. **Home Page:** Features a dynamic grid with category-based search and rating filters.
+2. **Product Card:** Optimized with Tailwind's `group-hover` and `line-clamp` for visual consistency.
+3. **Cart Page:** Real-time quantity adjustments and order summary calculation.
+4. **About Page:** Technical breakdown of the project's functionalities.
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/prodash.git
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Run the application**
+```bash
+npm run dev
+```
+
+---
+
+## 💡 What I Learned
+
+* How to handle **Asynchronous API lifecycles** using `useEffect`.
+* The difference between **Context API** (for global static data like Auth) and **Redux Toolkit** (for transactional data like a Cart).
+* Optimizing UI performance by preventing unnecessary re-renders during search.
+
+---
+
+## 📞 Contact Me
+
+**Name:** Shailaja Tripathi \
+**LinkedIn:** [Your LinkedIn Profile]( https://www.linkedin.com/in/shailaja-tripathi-3bb847193/)
+
+
+---
