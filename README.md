@@ -1,4 +1,4 @@
----
+
 # 🚀 ProDash | Modern E-Commerce Dashboard
 
 ProDash is a high-performance product listing and management application built with React.js. It features a seamless user experience with real-time searching, advanced filtering, and a robust global cart management system.
